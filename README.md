@@ -6,8 +6,6 @@ Welcome to the **Arcadian Transaction** repository. This repository consists of 
 1. **TransactionApi** - A .NET 7 API.
 2. **arcadian-transactions-app** - An Angular application.
 
-![Arcadian Transaction Logo](link-to-logo-if-you-have-one)
-
 ## Getting Started
 
 To get started with the project, you need to run both the API solution and the Angular application.
@@ -67,10 +65,4 @@ To get started with the project, you need to run both the API solution and the A
     ```
 
     The application will be available at [http://localhost:4200](http://localhost:4200).
-
-## Angular Dependencies
-
-- Angular Version: 16.2.0
-- rxjs: 7.8.0
-- ... (Add other notable dependencies if needed)
 
