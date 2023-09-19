@@ -35,13 +35,6 @@ To get started with the project, you need to run both the API solution and the A
     ```bash
     dotnet run --launch-profile https
     ```
-
-    You can also use IIS Express if you have it installed:
-
-    ```bash
-    # Instructions for running with IIS Express
-    ```
-
     The Swagger documentation will be available at [http://localhost:5094/swagger](http://localhost:5094/swagger) or [https://localhost:7000/swagger](https://localhost:7000/swagger) based on your chosen profile.
 
 ### Running the arcadian-transactions-app
