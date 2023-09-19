@@ -1,0 +1,31 @@
+<div class="card">
+    <div class="header">Transactions</div>
+
+    <table>
+        <thead>
+          <tr>
+            <th>Transaction ID</th>
+            <th>Name</th>
+            <th>Date</th>
+            <th>Cost</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let transaction of transactions">
+            <td>{{ transaction.id }}</td>
+            <td>{{ transaction.transactionName }}</td>
+            <td>{{ transaction.date | date }}</td>
+            <td>${{ transaction.cost }}</td>
+            <td>
+              <button (click)="viewTransaction(transaction.id)">View</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+    <button class="button" (click)="goToCreate()">Create New Transaction</button>
+</div>
+
+
+ 

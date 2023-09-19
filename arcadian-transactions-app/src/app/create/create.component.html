@@ -1,0 +1,26 @@
+<div class="card">
+    <div class="header">Create Transaction</div>
+    
+    <form (ngSubmit)="createTransaction()">
+        <label>
+            Transaction Name:
+            <input type="text" [(ngModel)]="transaction.transactionName" name="transactionName">
+        </label>
+
+        <label>
+            Date:
+            <input type="date" [(ngModel)]="transaction.date" name="date">
+        </label>
+
+        <label>
+            Cost:
+            <input type="number" [(ngModel)]="transaction.cost" name="cost">
+        </label>
+        
+        <button class="submit-button" type="submit">Submit</button>
+        
+        <button (click)="goBack()" class="go-back-button">Go back to Dashboard</button>
+
+    </form>
+    
+</div>

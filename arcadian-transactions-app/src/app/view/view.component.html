@@ -1,0 +1,17 @@
+<div class="card">
+  <h2>Transaction Details</h2>
+  <div class="transaction-detail">
+    <strong>Transaction ID:</strong> {{transaction?.id}}
+  </div>
+  <div class="transaction-detail">
+    <strong>Transaction Name:</strong> {{transaction?.transactionName}}
+  </div>
+  <div class="transaction-detail">
+    <strong>Date:</strong> {{transaction?.date | date}}
+  </div>
+  <div class="transaction-detail">
+    <strong>Cost:</strong> ${{transaction?.cost}}
+  </div>
+  <button class="button-back" (click)="goBack()">Go Back to Dashboard</button>
+
+</div>

@@ -1,0 +1,147 @@
+:root {
+    --arcadian-color: #2a9d8f;  // Example: #3498db
+}
+
+
+body {
+    display: flex;
+    justify-content: center;  // Horizontally center
+    align-items: center;      // Vertically center
+    min-height: 100vh;        // Take up the full viewport height
+    margin: 0;                // Remove default margin
+    font-family: 'Arial', sans-serif; // Use a default font
+    background-color: #f4f4f4; // Set a background color
+  
+  }
+  
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px;
+    padding: 2rem;
+    margin: 1rem 0;
+
+    .transaction-detail {
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    
+      .input-group {
+        margin-bottom: 20px;
+        label {
+          display: block;
+          margin-bottom: 10px;
+          font-weight: bold;
+        }
+        input {
+          width: 100%;
+          padding: 8px 15px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          &:focus {
+            border-color: var(--arcadian-color);
+            outline: none;
+          }
+        }
+      }
+    
+      button {
+        background-color: var(--arcadian-color);
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        &:hover {
+            background-color: darken(#2a9d8f, 10%);
+        }
+      }
+    }
+
+
+// Dashboard specific styles (dashboard.component.scss)
+
+.header {
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    color: var(--arcadian-color);
+}
+
+table {
+    width: 100%;
+    border-collapse: separate; 
+    border-spacing: 0 1rem;
+  
+    th, td {
+        padding: 0.8rem 1.2rem;
+        text-align: left;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    th {
+        background-color: #f8f8f8; 
+        font-weight: 600;
+    }
+
+    td {
+        background-color: #fff;
+    }
+
+    tr:hover {
+        background-color: #f4f4f4;
+    }
+}
+
+.button {
+    margin-top: 1.5rem;
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    padding: 0.5rem 1rem;
+    background-color: var(--arcadian-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: darken(#2a9d8f, 10%);
+    }
+    
+}
+
+.button-back {
+    margin-top: 20px; // or any other space you feel appropriate
+    padding: 10px 15px;
+    background-color: var(--arcadian-color);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  
+    &:hover {
+        background-color: darken(#2a9d8f, 10%);
+    }
+  }
+  

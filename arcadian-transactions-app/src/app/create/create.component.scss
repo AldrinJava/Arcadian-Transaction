@@ -1,0 +1,15 @@
+label {
+    display: block;  // Makes the label take the full width and act like a block element.
+    margin-bottom: 20px;  // Adds 20px space below each label.
+  }
+  
+  .submit-button {
+    display: block; // This ensures the button takes up its own line.
+    margin-top: 20px; // Adds extra space above the button.
+  }
+  
+  .go-back-button {
+    display: block;  // Makes both buttons take up their own line.
+    margin-top: 20px; // Adds extra space above both buttons.
+  }
+  
